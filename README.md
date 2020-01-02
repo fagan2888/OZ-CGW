@@ -1,10 +1,11 @@
-# Replication files for Chen, Glaeser, and Wessel (2019)
+# Replication files for Chen, Glaeser, and Wessel (2020)
 
 NBER Working Paper link: https://www.nber.org/papers/w26587
 
 Thanks to Yanchen Jiang (github: @jeffjiang1204) for research assistance.
 
 ## Dependencies
+
 - All code is written on Python 3.7 (Anaconda distribution) and R 3.5.1
 - Non-standard python packages:
     - cenpy (https://cenpy-devs.github.io/cenpy/index.html)
