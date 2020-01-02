@@ -1,0 +1,17 @@
+data/*
+*.ipynb
+*pickle
+.Rhistory
+*ipynb_checkpoint*
+*aux
+*bbl
+*blg
+*docx
+*fdb_latexmk
+*fls
+*log
+*out
+*synctex*
+*pyc
+.DS_Store
+

@@ -1,0 +1,55 @@
+
+        \begin{table}[tbh]
+        \caption{Estimation of ATT using FHFA Tract and ZIP-level data}
+        \label{tab:tract_and_zip_lic_only_false}
+        \scriptsize
+        \centering
+        \vspace{1em}
+        \begin{threeparttable}
+        \begin{tabular}{lcccccc}
+\toprule
+{} &                                                    TWFE &                                                   TWFE  &                                            Weighting CS &                                            Weighting DR &                                                  Paired &                                                 Paired  \\
+{} & \hypertarget{tabcol:tract_and_zip_lic_only_false1}{(1)} & \hypertarget{tabcol:tract_and_zip_lic_only_false2}{(2)} & \hypertarget{tabcol:tract_and_zip_lic_only_false3}{(3)} & \hypertarget{tabcol:tract_and_zip_lic_only_false4}{(4)} & \hypertarget{tabcol:tract_and_zip_lic_only_false5}{(5)} & \hypertarget{tabcol:tract_and_zip_lic_only_false6}{(6)} \\
+\midrule
+\textbf{Tract-level data}        &                                                         &                                                         &                                                         &                                                         &                                                         &                                                         \\
+\quad $\hat\tau$                 &                                                 $0.336$ &                                                 $0.250$ &                                                 $0.306$ &                                                 $0.104$ &                                                 $0.628$ &                                                 $0.378$ \\
+\quad                            &                                               ($0.206$) &                                               ($0.212$) &                                               ($0.325$) &                                               ($0.324$) &                                               ($0.255$) &                                               ($0.365$) \\
+\quad $p$-value                  &                                                 $0.104$ &                                                 $0.239$ &                                                 $0.347$ &                                                 $0.748$ &                                                 $0.014$ &                                                 $0.301$ \\
+\quad Pre-trend test $p$-value   &                                                 $0.804$ &                                                 $0.920$ &                                                 $0.923$ &                                                     --- &                                                 $0.342$ &                                                     --- \\
+\quad $(N_1, N_0)$               &                                           (2802, 17323) &                                           (2802, 17323) &                                           (2802, 17323) &                                           (2995, 18075) &                                            (2542, 2542) &                                            (2542, 2542) \\
+\quad Covariates                 &                                                      No &                                                     Yes &                                                     Yes &                                                     Yes &                                                     --- &                                                     --- \\
+\quad Sample                     &                                   Balanced (2014--2018) &                                   Balanced (2014--2018) &                                   Balanced (2014--2018) &                                   Balanced (2017--2018) &                                     Paired (2014--2018) &                                     Paired (2014--2018) \\
+\quad Trend                      &                                                     --- &                                                     --- &                                                     --- &                                                     --- &                                                    None &                                                  Linear \\
+\quad Model                      &                                                  Within &                                                  Within &                                               Weighting &                                               Weighting &                                                  Within &                                                  Within \\
+\midrule \textbf{ZIP-level data} &                                                         &                                                         &                                                         &                                                         &                                                         &                                                         \\
+\quad $\hat \tau$                &                                                 $0.514$ &                                                $-0.196$ &                                                         &                                                $-0.492$ &                                                         &                                                         \\
+\quad                            &                                               ($0.393$) &                                               ($0.436$) &                                                         &                                               ($0.422$) &                                                         &                                                         \\
+\quad $p$-value                  &                                                 $0.191$ &                                                 $0.654$ &                                                         &                                                 $0.244$ &                                                         &                                                         \\
+\quad Pre-trend test $p$-value   &                                                 $0.024$ &                                                 $0.392$ &                                                         &                                                     --- &                                                         &                                                         \\
+\quad $N$                        &                                                $14,123$ &                                                $14,123$ &                                                         &                                           (1339, 10223) &                                                         &                                                         \\
+\quad Covariates                 &                                                      No &                                                     Yes &                                                         &                                                     Yes &                                                         &                                                         \\
+\quad Sample                     &                                 Unbalanced (2014--2018) &                                 Unbalanced (2014--2018) &                                                         &                                   Balanced (2017--2018) &                                                         &                                                         \\
+\quad Model                      &                                                  Within &                                                  Within &                                                         &                                               Weighting &                                                         &                                                         \\
+\bottomrule
+\end{tabular}
+
+        \begin{tablenotes}
+        \footnotesize
+        \item     Covariates include log median household income, total housing units, percent white,
+    percent with post-secondary education,
+    percent rental units, percent covered by health insurance among native-born individuals,
+    percent below poverty line, percent receiving supplemental income, and percent employed.
+    For Column (2), only including log median household income and
+percent white as covariates gives $0.033$ ($0.211$) for the top panel and
+$-0.279$ ($0.419$) for the bottom panel.
+
+    Pretest for Column (2) interacts covariates with time dummies.
+    Discrete treatment in Column (4) is defined as
+    the highest 88.3\% of treated
+    tract coverage, so as to keep the percentage of treated ZIPs the same as treated tracts.
+    
+        \end{tablenotes}
+        \end{threeparttable}
+
+        \end{table}
+        

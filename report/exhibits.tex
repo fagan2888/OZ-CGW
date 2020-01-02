@@ -1,0 +1,71 @@
+\documentclass[10pt]{article}
+\usepackage{macros}
+\usepackage{pdflscape,threeparttable}
+\begin{document}
+\begin{figure}[tb]
+\centering
+\includegraphics[width=1\textwidth]{../exhibits/map.png}
+\caption{Opportunity Zones}
+\label{fig:map}
+\end{figure}
+
+
+\begin{figure}[tb]
+\centering
+\includegraphics[width=\textwidth]{../exhibits/zillow_raw_trend.pdf}
+\caption{Trend and event study plot for top panel of  
+\cref{tab:tract_and_zip}}
+\label{fig:raw_trend}
+\end{figure}
+
+\begin{figure}[tb]
+\centering
+\includegraphics[width=\textwidth]{../exhibits/zillow_pretest_event_study_plot.pdf}
+\caption{Trend and event study plot for top panel of  
+\cref{tab:tract_and_zip}}
+\label{fig:zillow_event_study}
+\end{figure}
+
+
+
+\begin{landscape}
+\input{../exhibits/join_tab.tex}  % \label{tab:tract_and_zip}
+\end{landscape}
+
+\input{../exhibits/by_pct_employment.tex}  % 
+% \label{tab:by_percent_employment_population_quartile}
+
+\appendix
+% \section{Appended exhibits}
+
+\begin{landscape}
+    \input{../exhibits/defs.tex}
+\end{landscape}
+
+\input{../exhibits/zillow_balance.tex} 
+% \end{landscape}  % 
+% \label{tab:balance_of_selected_opportunity_zones_and_eligible_Census_tracts}
+
+\input{../exhibits/paired_balance.tex}  % \label{tab:paired_balance}
+
+\input{../exhibits/parametric.tex}  % \label{tab:paired_balance}
+
+\begin{landscape}
+    \input{../exhibits/join_tab_lic_only_false.tex}
+\end{landscape}
+
+\input{../exhibits/by_pct_employment_lic_only_false.tex}
+
+\begin{figure}[tb]
+    \centering
+    \includegraphics{../exhibits/zillow_raw_trend_lic_only_false.pdf}
+    
+    \includegraphics{../exhibits/zillow_pretest_event_study_plot_lic_only_false.pdf}
+
+    \caption{\Cref{fig:raw_trend,fig:zillow_event_study} with all eligible
+    tracts as control group}
+    \label{fig:appendix_fig}
+\end{figure}
+
+
+\end{document}
